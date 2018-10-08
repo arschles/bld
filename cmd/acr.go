@@ -1,11 +1,13 @@
 package cmd
 
 import (
-	"os"
+	"io/ioutil"
+
+	"github.com/magefile/mage/sh"
 )
 
 func azCLIExists() bool {
-	if _, err := os.Stat("az"); err != nil {
+	if _, err := sh.Exec(map[string]string{}, ioutil.Discard, ioutil.Discard, "az"); err != nil {
 		return false
 	}
 	return true

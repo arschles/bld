@@ -1,11 +1,13 @@
 package cmd
 
 import (
-	"os"
+	"io/ioutil"
+
+	"github.com/magefile/mage/sh"
 )
 
 func dockerCLIExists() bool {
-	if _, err := os.Stat("docker"); err != nil {
+	if _, err := sh.Exec(map[string]string{}, ioutil.Discard, ioutil.Discard, "docker"); err != nil {
 		return false
 	}
 	return true
