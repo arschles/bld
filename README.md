@@ -16,7 +16,7 @@ When you're ready, run:
 go build
 ```
 
-You'll have a `./bld` binary that you can use. Read on for how.
+You'll have a `./bld` binary that you can use. Read on for how to use it.
 
 # How to Use `bld`
 
