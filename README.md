@@ -2,7 +2,9 @@
 
 One of the great things about [Cloud Native](https://www.cncf.io/) systems is that they're centered around containers. You can build your app, package it up into a container image, and then you can run the image in all sorts of places: your machine, your CI/CD system, your staging setup, and even production.
 
-`bld` is a little tool to make building container images a little easier. More background here: https://arschles.com/blog/az-acr-build-or-docker-build/
+**`bld` is a little tool to make building container images a little easier.**
+
+More background here: https://arschles.com/blog/az-acr-build-or-docker-build/
 
 # How to Build this Binary
 
